@@ -60,6 +60,10 @@ span{
 .botao:last-child{
     border-radius: 0px 0px 20px 20px;
 }
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 2px solid var(--verde);
+}
 
 @media screen and (min-width: 700px){
     .botoes{
@@ -72,3 +76,4 @@ span{
         border-radius: 0 20px 20px 0;
     }
 }
+
