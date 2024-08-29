@@ -2,11 +2,11 @@
 const botoes = document.querySelectorAll(".botao");
 const conteudo = document.querySelectorAll(".aba-conteudo");
 const tempo = document.querySelectorAll(".contador");
-tempo[0].textContent = "mah"
-const tempoObjetivo1 = new Date(2025,06,25,59,59);
-const tempoObjetivo2 = new Date(2025,06,25,59,59);
-const tempoObjetivo3 = new Date(2025,06,25,59,59);
-const tempoObjetivo4 = new Date(2023,06,23,59,59);
+tempo[0].textContent = "Bibs"
+const tempoObjetivo1 = new Date(2024,11,31,59,59);
+const tempoObjetivo2 = new Date(2024,11,31,59,59);
+const tempoObjetivo3 = new Date(2024,11,31,59,59);
+const tempoObjetivo4 = new Date(2024,11,31,59,59);
 
 function calculaTempo(tempoObjetivo){
 const agora = new Date();
@@ -23,12 +23,12 @@ dias = Math.floor(horas/24);
 segundos= segundos%60
 minutos= minutos %60
 horas= horas%24
-
 if (segundos >= 0){
-return `Faltam ${dias} dias, ${horas} horas,${minutos} minutos, ${segundos} segundos,`
+    return `Faltam ${dias} dias, ${horas} horas, ${minutos} minutos, ${segundos} segundos,`
 } else {
-    return 'Prazo Finalizado.'
-}
+    return 'Prazo Finalizado!'
+
+  }
 }
 
 tempo[0].textContent = calculaTempo(tempoObjetivo1);
